@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --MarineBlue: hsl(213, 96%, 18%);
+    --PurplishBlue: hsl(243, 100%, 62%);
+    --PastelBlue: hsl(228, 100%, 84%);
+    --LightBlue: hsl(206, 94%, 87%);
+    --StrawberryRed: hsl(354, 84%, 57%);
+    --CoolGray: hsl(231, 11%, 63%);
+    --LightGray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.SideBar {
+    background-image: url(/assets/images/bg-sidebar-desktop.svg);
+    height: 35.49rem;
+    width: 17.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 2rem;
+    text-transform: uppercase;
+
+}
+
+.SideBar__Step {
+    display: flex;
+
+}
+
+.SideBar__Step__Number__Wrapper {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.0625rem solid var(--PastelBlue);
+    color: var(--PastelBlue);
+}
+
+
+.CurrentStep {
+    background-color: var(--PastelBlue);
+    color: var(--MarineBlue);
+}
+
+.SideBar__Step__Number {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.SideBar__Step__Details {
+    padding: 0 1rem;
+    display: flex;
+    height: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.SideBar__Step__Details__Step {
+    margin: 0;
+    color: var(--LightBlue);
+    font-size: 0.75rem
+
+}
+
+.SideBar__Step__Details__Title {
+    font-weight: 500;
+    color: var(--White);
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+}
