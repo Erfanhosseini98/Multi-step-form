@@ -21,12 +21,22 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    background-color: var(--LightBlue);
+}
+
+.Container {
+    width: 60rem;
+    height: 38rem;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
 }
 
 .SideBar {
     background-image: url(/assets/images/bg-sidebar-desktop.svg);
-    height: 35.49rem;
-    width: 17.1rem;
+    min-height: 35.49rem;
+    min-width: 17.1rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -76,7 +86,6 @@ body {
     margin: 0;
     color: var(--LightBlue);
     font-size: 0.75rem
-
 }
 
 .SideBar__Step__Details__Title {
@@ -85,4 +94,66 @@ body {
     margin: 0;
     font-size: 1rem;
     letter-spacing: 0.02rem;
+}
+
+.Form {
+    height: 100%;
+    padding: 1rem 5rem;
+}
+
+.Form__Title {
+    color: var(--MarineBlue);
+    margin: 0.75rem 0;
+}
+
+.Form__Subtitle {
+    color: var(--CoolGray);
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.Form__Wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.Form__Row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.Form__Row__Label {
+    color: var(--MarineBlue);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.Form__Row__Input {
+    height: 2.5rem;
+    border-radius: 0.3125rem;
+    outline: none;
+    border: 0.0625rem solid var(--LightGray);
+    padding: 1rem;
+}
+
+input:placeholder-shown {
+    color: var(--LightGray);
+    font-weight: 500;
+}
+
+.Form__Button {
+    height: 2.5rem;
+    padding: 1rem;
+    background-color: var(--MarineBlue);
+    border: 0.0625rem solid var(--LightGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    width: fit-content;
+    border-radius: 0.3125rem;
+    margin-left: auto;
+    align-self: flex-end;
 }
