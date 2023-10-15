@@ -11,7 +11,6 @@
     <title>Frontend Mentor | Multi-step form</title>
 
     <link rel="stylesheet" href="assets/style/style.css" />
-
 </head>
 
 <body>
@@ -23,7 +22,7 @@
                     <p class="SideBar__Step__Number">1</p>
                 </span>
                 <div class="SideBar__Step__Details">
-                    <div class="SideBar__Step__Details__Step ">STEP 1</div>
+                    <div class="SideBar__Step__Details__Step">STEP 1</div>
                     <div class="SideBar__Step__Details__Title">Your info</div>
                 </div>
             </div>
@@ -57,27 +56,44 @@
         </aside>
         <!-- Sidebar end -->
         <!-- Step 1 start -->
-        <section class="Form">
+        <section class="Form" id="Step1">
             <h2 class="Form__Title">Personal info</h2>
-            <p class="Form__Subtitle">Please provide your name, email address, and phone number.</p>
+            <p class="Form__Subtitle">
+                Please provide your name, email address, and phone number.
+            </p>
             <form action="" class="Form__Wrapper">
                 <div class="Form__Row">
-                    <label class="Form__Row__Label" for="name">Name</label>
-                    <input class="Form__Row__Input" type="text" name="name" id="name" placeholder="e.g. Stephen King">
+                    <div class="Form__Row__Laber__Wrapper">
+                        <label class="Form__Row__Label" for="name">Name</label>
+                        <p class="Form__Row__Notice"></p>
+                    </div>
+                    <input class="Form__Row__Input" type="text" name="name" id="name" placeholder="e.g. Stephen King" />
                 </div>
                 <div class="Form__Row">
-                    <label class="Form__Row__Label" for="email">Email Address</label>
+                    <div class="Form__Row__Laber__Wrapper">
+                        <label class="Form__Row__Label" for="email">Email Address</label>
+                        <p class="Form__Row__Notice"></p>
+                    </div>
                     <input class="Form__Row__Input" type="email" name="email" id="email"
-                        placeholder="e.g. stephenking@lorem.com">
+                        placeholder="e.g. stephenking@lorem.com" />
                 </div>
                 <div class="Form__Row">
-                    <label class="Form__Row__Label" for="phone">Phone Number</label>
-                    <input class="Form__Row__Input" type="text" name="phone" id="phone" placeholder="e.g. +1 234 567 890">
+                    <div class="Form__Row__Laber__Wrapper">
+                        <label class="Form__Row__Label" for="phone">Phone Number</label>
+                        <p class="Form__Row__Notice"></p>
+                    </div>
+                    <input class="Form__Row__Input" type="text" name="phone" id="phone"
+                        placeholder="e.g. +98 234 567 890" />
                 </div>
-                <button class="Form__Button" type="submit">Next Step</button>
+                <button onclick="validateInputs()" class="Form__Button" type="button">
+                    Next Step
+                </button>
             </form>
         </section>
         <!-- Step 1 end -->
+        <section id="Step2">
+            <h2>Step2</h2>
+        </section>
         <!-- Step 2 start -->
         <!-- Select your plan You have the option of monthly or yearly billing. Arcade
         $9/mo Advanced $12/mo Pro $15/mo Monthly Yearly Go Back Next Step -->
@@ -105,6 +121,7 @@
                 Name Here</a>.
         </div> -->
     </main>
+    <script src="assets/scripts/main.js"></script>
 </body>
 
 </html>

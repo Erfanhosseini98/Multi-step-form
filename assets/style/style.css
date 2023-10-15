@@ -11,6 +11,8 @@
     --Magnolia: hsl(217, 100%, 97%);
     --Alabaster: hsl(231, 100%, 99%);
     --White: hsl(0, 0%, 100%);
+    --LightGreen: hsl(76, 70%, 72%);
+    --Green: hsl(113, 39%, 27%);
 }
 
 *,
@@ -35,6 +37,7 @@ body {
     display: flex;
     align-items: center;
     padding: 1rem;
+    border-radius: .5rem;
 }
 
 .SideBar {
@@ -128,19 +131,37 @@ body {
     flex-direction: column;
     gap: 0.3rem;
 }
-
+.Form__Row__Laber__Wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 .Form__Row__Label {
     color: var(--MarineBlue);
     font-weight: 500;
     font-size: 1rem;
 }
+.Form__Row__Notice{
+    margin: 0;
+    font-weight: 300;
+    color: var(--StrawberryRed);
 
+}
 .Form__Row__Input {
     height: 2.5rem;
     border-radius: 0.3125rem;
     outline: none;
     border: 0.0625rem solid var(--LightGray);
     padding: 1rem;
+}
+.Form__Row__Input__Required {
+    border: 0.1rem solid var(--MarineBlue);
+}
+.Form__Row__Input__Valid {
+    border: 0.0625rem solid var(--Green);
+}
+.Form__Row__Input__InValid {
+    border: 0.0625rem solid var(--StrawberryRed);
 }
 
 input:placeholder-shown {
@@ -161,4 +182,8 @@ input:placeholder-shown {
     border-radius: 0.3125rem;
     margin-top: auto;
     align-self: flex-end;
+}
+
+#Step2{
+    display: none;
 }
